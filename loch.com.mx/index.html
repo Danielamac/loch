@@ -1,0 +1,233 @@
+<script src="js\front.js"> </script>
+<head>
+<title>Loch interactive Jewelry</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="icon" href="images/Imagotipo.png" type="image/png" >
+<link rel="stylesheet" href="css\index.css">
+</head>
+<body>
+  <div class="header">
+    <img style="height:10%"src="images\Logotipo.png">
+  </div>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)"><img class="imagonav" style="height:3%;" src="images\noun_bag_836849.png"></a>
+    <a href="javascript:void(0)">Nosotros</a>
+    <a href="javascript:void(0)">¿Cómo saber mi talla?</a>
+    <a href="javascript:void(0)">Contacto</a>
+    <a href="javascript:void(0)">Mí loch</a>
+    <a href="javascript:void(0)"><img class="bag" style="height:3%;" src="images\Imagotipo.png"></a>
+  </div>
+
+<div style="background-color: white; height:100%; width: 90%" class="modal" id="myModal">
+  <span class="close">&times;</span>
+  <p style="margin-top:-2%!important; font-weight:bolder!important; font-size: xx-large; z-index: 10; position: relative;"> Personaliza </p>
+  <div class="row" style="margin-top:-30%;">
+    <div class="col-sm-6">
+    <iframe src="https://playcanv.as/index/CoZMLG0C" id="iframe1" style="display: block;margin-right: auto;margin-left: auto;width: 90%;height: 500px;border: none;"src="images\S 45.PNG"> </iframe>
+      <a href=""><img  style="margin-top:-0.5%; margin-left:1%;" class="pull-right img-responsive" src="images\Share.png"></a><a href=""><img style="height:3%;" class="pull-right img-responsive" src="images\path.png"></a>
+    </div>
+    <div class="col-sm-6">
+      <table style="width:100%;margin-left:5%; margin-right:5%;">
+        <tr>
+        <p style="font-family: roboto; color: black; text-align: left!important; margin-top:3%; margin-bottom: -9%;">  Elige el metal  <p>
+        </tr>
+        <tr>
+          <td>
+              <button class="color" style="background-color: #F9D4C4; font-family: roboto; font-size: 9px; color: white; margin-top:5%;" onclick="changeMaterial(2)"></button><p style="font-size: 10; margin-top: 3%">Baño de Oro Rosa</p>
+            </td>
+            <td>
+              <button class="color" style="background-color: #D0D0D0; font-family: roboto; font-size: 9px; color: white;margin-top:5%;" onclick="changeMaterial(0)"></button><p style="font-size: 10; margin-top: 3%">Plata 925</p>
+            </td>
+            <td>
+               <button class="color" style="background-color: #e8cf8d; font-family: roboto; font-size: 9px; color: white; margin-top:5%;" onclick="changeMaterial(1)"></button><p style="font-size: 10; margin-top: 3%">Baño de Oro</p>
+            </td>
+        </tr>
+      </table>
+          <table style="width: 100%; margin-left:5%; margin-right:5%; margin-top:10%; text-align: center;">
+            <tr>
+            <p style="text-align: left; margin-top: 0%; margin-bottom: -7%;">Elige la letra</p>
+            </tr>
+            <tr stytle="margin-top: 1%; margin-bottom: 1%;">
+              <td ><a onclick="changeLetter(0)">A</a></td><td><a honclick="changeLetter(1)">B</a></td><td><a onclick="changeLetter(2)">C</a></td><td><a onclick="changeLetter(3)">D</a></td><td><a onclick="changeLetter(4)">E</a></td><td><a onclick="changeLetter(5)">F</a></td><td><a onclick="changeLetter(6)">G</a></td><td><a onclick="changeLetter(7)">H</a></td>
+            </tr>
+            <tr>
+            <td><a onclick="changeLetter(8)">I</a></td><td><a onclick="changeLetter(9)">J</a></td><td><a onclick="changeLetter(10)">K</a></td><td><a onclick="changeLetter(11)">L</a></td><td><a onclick="changeLetter(12)">M</a></td><td><a onclick="changeLetter(13)">N</a></td><td><a onclick="changeLetter(14)">O</a></td><td><a onclick="changeLetter(15)">P</a></td>
+            </tr>
+            <tr>
+              <td><a onclick="changeLetter(16)">Q</a></td><td><a onclick="changeLetter(17)">R</a></td><td><a onclick="changeLetter(18)">S</a></td><td><a onclick="changeLetter(19)">T</a></td><td><a onclick="changeLetter(20)">U</a></td><td><a onclick="changeLetter(21)">V</a></td><td><a onclick="changeLetter(22)">W</a></td><td><a onclick="changeLetter(24)">X</a></td>
+            </tr>
+            <tr>
+              <td style="color:white!important;">0</td><td style="color:white!important;">0</td><td><a style="color:white!important;">0</a></td><td><a onclick="changeLetter(25)">Y</a></td><td><a onclick="changeLetter(26)">Z</a></td><td style="color:white!important;">0</td><td style="color:white!important;">0</td><td style="color:white!important;">0</td>
+            </tr>
+          </table>
+<tr>
+  <tr>
+    <p style="text-align: left; margin-top: 0%; margin-bottom: 5%;">Elige la talla</p>
+  </tr>
+  <tr>
+    <td>
+      <div class="dropdown" style="display: block; margin: auto; margin-top: 5%;">
+        <select name="one" style="display: block; margin: auto;" class="dropdown-select">
+          <option value="">Género</option>
+          <option value="1">Femenino</option>
+          <option value="2">Masculino</option>
+          <option value="3">Otro</option>
+        </select>
+      </div>
+    </td>
+  </tr>
+  </tr>
+  <tr>
+    <button> Agregar al carrito </button>
+  </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+  <div class="content">
+    <div style="width:100%;margin-top:-1%;" id="carousel-example" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <a href="#"><img src="images\IMG_7740.JPG" /></a>
+    </div>
+
+  </div>
+  <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+
+
+<div class="top">
+  <h2>PERSONALIZA TU JOYERÍA<h2>
+  <h4>Personaliza la forma, el metal y las piedras. Recibela en 7 días</h4>
+</br>
+<button class="Comenzar" id="myBtn" data-type="modal-trigger">Comenzar</button>
+
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <img class="gif" style="height:60%;width:auto;"src="images\Group 1@2x.png">
+  </div>
+  <div class="col-sm-6">
+  <table>
+    <tr>
+    <h6>Literally </h6>
+    </tr>
+    <tr style="width:100%">
+     <table style="width:100%;">
+       <tr>
+         <td>
+        <button style="float:right;"class="propiedades">Metal</button>
+      </td>
+      <td>
+        <button class="propiedades">Letra</button>
+      </td>
+      <td>
+        <button style="float: left;"class="propiedades">Talla</button>
+      </td>
+      </tr>
+      </table>
+    </tr>
+    <tr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </tr>
+
+  </table>
+  </div>
+</div>
+
+<div>
+<div class="scrolling-wrapper">
+
+  <div class="card"><h5>Desde $650.00 MXN</h5><img style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Anillo</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;" src="images\Share.png"></a></a></div>
+  <div class="card"><h5>Desde $650.00 MXN</h5><img class="anillo" style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Aretes</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;"src="images\Share.png"></a></div>
+  <div class="card"><h5>Desde $650.00 MXN</h5><img class="anillo"style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Collar</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;"src="images\Share.png"></a></div>
+  <div class="card"><h5>Desde $650.00 MXN</h5><img class="anillo"style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Brazalete</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;"src="images\Share.png"></a></div>
+  <div class="card"><h5>Desde $650.00 MXN</h5><img class="anillo"style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Dije</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;"src="images\Share.png"></a></div>
+  <div class="card"><h5>Desde $650.00 MXN</h5><img class="anillo"style="width: 90%;display:block; margin: auto;"src="images\S 45.PNG"><h3>Pulsera</h3><a href><img class="share"style="height:2%; width: auto; margin-left:87%; margin-top:-13%;"src="images\Share.png"></a></div>
+</div>
+</div>
+
+<div class="personalizando" style="background-color: #F0EEEF; margin-top: 3%; width:100%;">
+  <div class="row">
+    <div class="col-sm-6">
+      <img style="height: 55%; width: auto; display:block; margin: auto;margin-top: 10%;" src="images\Group 2@2x.png">
+    </div>
+    <div class="col-sm-6">
+        <p style="font-size: x-large;"class="personalizandotxt"> 7 personas están personalizando su pieza ahora mismo.<p>
+  </div>
+</div>
+<div style="background-color:#050001"class="suscribete">
+  <table style="width:100%">
+    <tr>
+      <td>
+  <p style="font-family:roboto; font-weight: bolder;color: white; font-size: 2vw; text-align:left;"> SUSCRÍBETE </p>
+</td>
+<td>
+  <input style="background-color: white; width:100%; border-radius:5px 0px 0px 5px; border:none; font-family:roboto;"type="text" name="FirstName" value="Correo">
+</td>
+<td>
+  <button style="background-color:#F0EEEF; border: none; border-radius:0px 5px 5px 0px; border-family: roboto;">Enviar</button>
+</td>
+</tr>
+</table>
+</div>
+  </div>
+</body>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
